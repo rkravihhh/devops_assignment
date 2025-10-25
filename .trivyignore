@@ -1,0 +1,7 @@
+# Trivy ignore file
+# Format: CVE-ID:Reason
+# Example: CVE-2021-44228:Not applicable in our environment
+
+# Ignore specific CVEs that are not applicable
+# CVE-2021-44228:Log4j vulnerability not applicable to Python application
+# CVE-2022-XXXXX:Add specific CVEs to ignore with justification

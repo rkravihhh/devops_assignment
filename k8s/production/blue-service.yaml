@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-app-blue-service
+  namespace: production
+  labels:
+    app: backend-app
+    version: blue
+    environment: production
+    deployment-type: blue
+spec:
+  selector:
+    app: backend-app
+    version: blue
+  ports:
+  - name: http
+    port: 8000
+    targetPort: 8000
+    protocol: TCP
+  type: ClusterIP
