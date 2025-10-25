@@ -38,6 +38,13 @@
 - **Access Logging**: All API access logged with correlation IDs for tracing
 - **Data Masking**: Card numbers masked in logs and responses (first 6, last 4 digits only)
 
+### Multi-Region Disaster Recovery Assumptions
+- **Active/Active Configuration**: Identical architecture deployed across multiple AWS regions
+- **Cross-Region Replication**: RDS read replicas and S3 cross-region replication
+- **Global Load Balancing**: Route 53 health checks and traffic distribution
+- **Active/Passive DR Strategy**: Secondary regions in standby mode
+- **Regional Independence**: Each region operates independently
+
 ## Open Questions
 
 ### Disaster Recovery & Business Continuity
